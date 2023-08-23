@@ -33,16 +33,17 @@ Comandos do Git ensinados no curso Versionamento de Código com Git e GitHub da 
 | Visualizar diferenças entre branches | [Como usar](#visualizar-diferenças-entre-branches) |
 | Clonar branch de um repositório especifico | [Como usar](#clonar-branch-de-um-repositório-especifico) |
 
+##
 ### Definir/Alterar email
 ```
 git config --global user.email {email}
 ```
-
+##
 ### Definir/Alterar nome
 ```
 git config --global user.nome {nome}
 ```
-
+##
 ### Inicialização de um novo repositório Git
 ```
 git init
@@ -55,6 +56,7 @@ git push -u origin main
 
 <small>Nota: git branch -m main deve ser usado apenas quando você deseja renomear de 'master' para 'main'.</small>
 
+##
 ### Remover pasta ou arquivo do controle de versão
 ```
 git rm -r --cached {nome da pasta}
@@ -63,94 +65,98 @@ ou
 ```
 git rm --cached {nome do arquivo}
 ```
-
+##
 ### Atualizar commit
 ```
 git add . ou {nome do arquivo}
 git commit -m "mensagem"
 git push -u origin main
 ```
-
+##
 ### .gitignore | Ignorar pastas ou arquivos
 ```
-echo "pasta/" ou "arquivo" >> .gitignore
+echo "pasta/"
 ```
-
+ou
+```
+"arquivo" >> .gitignore
+```
+##
 ### Criar pasta
 ```
 mkdir {nome da pasta}
 ```
-
+##
 ### Criar arquivo README
 ```
 touch README.md ou {nome da pasta}/README.md
 ```
-
+##
 ### Remover repositorio local
 ```
 rm -rf .git
 ```
-
+##
 ### Restaurar última modificação do arquivo
 ```
 git restore nomeDoArquivo
 ```
-
+##
 ### Mudar mensagem do commit
 ```
 git commit --amend -m "mensagem"
 ```
-
+##
 ### Retornando ao commit anterior
 ```
 git log
 git reset --soft codigo do commit
 ```
-
+##
 ### Removendo arquivo do commit
 ```
 git reset nomeDoArquivo
 ```
-
+ou
 ```
 git restore --staged nomeDoArquivo
 ```
-
+##
 ### Puxando alterações do repositório remoto para o repositório local
 ```
 git pull
 ```
-
+##
 ### Listar último commit de cada branch
 ```
 git branch -v
 ```
-
+##
 ### Listar branches existentes
 ```
 git branch
 ```
-
+##
 ### Criar novas branches
 ```
 git checkout -b {nome da nova branch}
 ```
-
+##
 ### Trocar de branch
 ```
 git checkout {nome da branch}
 ```
-
+##
 ### Mesclar branches
 ```
 git merge {nome da outra branch}
 ```
-
+##
 ### Excluir branch
 ```
 git branch -d {nome da branch}
 ```
-
+##
 ### Visualizar diferenças entre branches
 ``` 
 git diff {nome da branch} {nome da outra branch}
@@ -160,10 +166,11 @@ git diff {nome da branch} {nome da outra branch}
 
 <small>Visualizando a diferença entre commit da branch local e remota</small>
 
+##
 ### Clonar branch de um repositório especifico
 ```
 git clone {link do repositório} --branch {nome da branch} --single-branch
 ```
-
+##
 ## 🔍 Referências
 - [Digital Innovation One](https://wwwdio.me/).
