@@ -32,6 +32,9 @@ Comandos do Git ensinados no curso Versionamento de Código com Git e GitHub da 
 | Excluir branch | [Como usar](#excluir-branch) |
 | Visualizar diferenças entre branches | [Como usar](#visualizar-diferenças-entre-branches) |
 | Clonar branch de um repositório especifico | [Como usar](#clonar-branch-de-um-repositório-especifico) |
+| Trabalhando com tags | [Como usar](#comandos-para-trabalhar-com-tags) |
+| Visualizar alterações que serão incluídas no próximo commit | [Como usar](#visualizar-alterações-que-serão-incluídas-no-próximo-commit) |
+| Assinatura em um commit | [Como usar](#assinatura-em-um-commit) |
 
 ##
 ### Definir/Alterar email
@@ -171,6 +174,41 @@ git diff {nome da branch} {nome da outra branch}
 ```
 git clone {link do repositório} --branch {nome da branch} --single-branch
 ```
+
+##
+### Comandos para trabalhar com tags
+#### lista todas as tags em um repositório
+```
+git tag
+```
+#### cria uma nova tag
+```
+git tag -a {nome da tag} -m "mensagem"
+```
+#### exclui uma tag
+```
+git tag -d {nome da tag}
+```
+
+##
+### Visualizar alterações que serão incluídas no próximo commit
+```
+git diff --staged
+```
+
+##
+### Assinatura em um commit
+```
+git commit -sm "mensagem"
+```
+Este comando adiciona automaticamente sua assinatura ao commit. A assinatura é um texto que identifica você como o autor do commit e que garante que você concorda com os termos da licença do projeto.
+
+Você também pode usar o comando sem o ```-m``` para criar um commit com uma assinatura, mas sem uma mensagem.
+```
+git commit -s
+```
+
 ##
 ## 🔍 Referências
-- [Digital Innovation One](https://wwwdio.me/).
+- [Git - Reference](https://git-scm.com/docs/)
+- [Digital Innovation One](https://wwwdio.me/)
