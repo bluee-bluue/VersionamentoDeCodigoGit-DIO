@@ -1,12 +1,12 @@
-# Curso Versionamento de Código com Git e GitHub da DIO
+# Versionamento de Código com Git e GitHub
 
-Comandos do Git ensinados no curso Versionamento de Código com Git e GitHub da [Digital Innovation One](https://wwwdio.me/).
+Comandos do Git ensinados no curso Versionamento de Código com Git e GitHub da [Digital Innovation One](https://wwwdio.me/), e também em pesquisas e outros recursos.
 
 ## 📚 Documentação
 - [Documentação Git](https://git-scm.com/doc)
 - [Documentação GitHub](https://docs.github.com/)
 
-## 💻 Comandos das aulas
+## 💻 Comandos
 
 | Ação | Como usar |
 |-------|---------|
@@ -77,13 +77,21 @@ git push -u origin main
 ```
 ##
 ### .gitignore | Ignorar pastas ou arquivos
+Criar o arquivo .gitignore
 ```
-echo "pasta/"
+touch .gitignore
 ```
-ou
+
+Adicionar um arquivo ao .gitignore
 ```
-"arquivo" >> .gitignore
+"{nome do arquivo}" >> .gitignore
 ```
+
+Adicionar uma pasta ao .gitignore
+```
+echo "{nome da pasta/}" >> .gitignore
+```
+
 ##
 ### Criar pasta
 ```
@@ -94,10 +102,12 @@ mkdir {nome da pasta}
 ```
 touch README.md ou {nome da pasta}/README.md
 ```
+<small>Nota: o comando ```touch``` só funciona no terminal GitBash, o terminal normal não reconhece esse comando.</small>
+
 ##
 ### Remover repositorio local
 ```
-rm -rf .git
+rm -r .git/
 ```
 ##
 ### Restaurar última modificação do arquivo
