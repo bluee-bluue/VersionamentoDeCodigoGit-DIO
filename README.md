@@ -81,6 +81,7 @@ Criar o arquivo .gitignore
 ```
 touch .gitignore
 ```
+<small>Nota: o comando ```touch``` só funciona no terminal Git Bash, o terminal normal não reconhece esse comando.</small>
 
 Adicionar um arquivo ao .gitignore
 ```
@@ -102,7 +103,7 @@ mkdir {nome da pasta}
 ```
 touch README.md ou {nome da pasta}/README.md
 ```
-<small>Nota: o comando ```touch``` só funciona no terminal GitBash, o terminal normal não reconhece esse comando.</small>
+<small>Nota: o comando ```touch``` só funciona no terminal Git Bash, o terminal normal não reconhece esse comando.</small>
 
 ##
 ### Remover repositorio local
