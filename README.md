@@ -12,7 +12,12 @@ Comandos do Git ensinados no curso Versionamento de Código com Git e GitHub da 
 |-------|---------|
 | Definir/Alterar email | [Como usar](#definiralterar-email) |
 | Definir/Alterar nome | [Como usar](#definiralterar-nome) |
-| Novo repositório | [Como usar](#inicialização-de-um-novo-repositório-git) |
+| Novo repositório | [Como usar](#inicializa-um-novo-repositório-local) |
+| Adicionar arquivos modificados | [Como usar](#adicionar-arquivos-modificados-do-palco) |
+| Commit dos arquivos | [Como usar](#realiza-o-commit-dos-arquivos-mofificados) |
+| Troca de branch | [Como usar](#troca-de-branch) |
+| Adicionar link do repositório remoto | [Como usar](#adiciona-o-link-do-repositório-remoto-ao-repositório-local) |
+| Primeiro envio das modificações | [Como usar](#realiza-o-primeiro-envio-envio-das-modificações) |
 | Remover pasta ou arquivo | [Como usar](#remover-pasta-ou-arquivo-do-controle-de-versão) |
 | Atualizar commit | [Como usar](#atualizar-commit) |
 | .gitignore | [Como usar](#gitignore--ignorar-pastas-ou-arquivos) |
@@ -27,6 +32,7 @@ Comandos do Git ensinados no curso Versionamento de Código com Git e GitHub da 
 | Listar último commit de cada branch | [Como usar](#listar-último-commit-de-cada-branch) |
 | Listar branches existentes | [Como usar](#listar-branches-existentes) |
 | Criar novas branches | [Como usar](#criar-novas-branches) |
+| Criar nova branch e mudar para a mesma | [Como usar](#criar-nova-branch-e-muda-para-a-mesma) |
 | Trocar de branch | [Como usar](#trocar-de-branch) |
 | Mesclar branches | [Como usar](#mesclar-branches) |
 | Excluir branch | [Como usar](#excluir-branch) |
@@ -47,17 +53,44 @@ git config --global user.email {email}
 git config --global user.nome {nome}
 ```
 ##
-### Inicialização de um novo repositório Git
+### Inicializa um novo repositório local
 ```
 git init
+```
+
+##
+### Adicionar arquivos modificados do palco
+```
 git add . ou {nome do arquivo}
+```
+
+##
+### Realiza o commit dos arquivos mofificados
+```
 git commit -m "mensagem"
+```
+
+##
+### Modificar branch
+```
 git branch -m main
-git remote add origin {link do repositório}
-git push -u origin main
 ```
 
 <small>Nota: git branch -m main deve ser usado apenas quando você deseja renomear de 'master' para 'main'.</small>
+
+##
+### Adiciona o link do repositório remoto ao repositório local
+```
+git remote add origin {link do repositório}
+```
+
+##
+### Realiza o primeiro envio envio das modificações
+```
+git push -u origin main
+```
+
+<small>Nota: Aos demais envio de modificações, usar apenas ```git push```.</small>
 
 ##
 ### Remover pasta ou arquivo do controle de versão
@@ -129,32 +162,45 @@ git reset --soft codigo do commit
 ##
 ### Removendo arquivo do commit
 ```
-git reset nomeDoArquivo
+git reset . ou {nomeDoArquivo}
 ```
 ou
 ```
-git restore --staged nomeDoArquivo
+git restore --staged {nomeDoArquivo}
 ```
+
 ##
 ### Puxando alterações do repositório remoto para o repositório local
 ```
 git pull
 ```
+
 ##
 ### Listar último commit de cada branch
 ```
 git branch -v
 ```
+
 ##
 ### Listar branches existentes
 ```
 git branch
 ```
+
 ##
 ### Criar novas branches
 ```
+git branch {nome da nova branch}
+```
+
+##
+### Criar nova branch e muda para a mesma
+```
 git checkout -b {nome da nova branch}
 ```
+
+<small>Nota: Esse comando além de criar uma nova branch, também realiza a troca automatica sem precisar de um novo comando.</small>
+
 ##
 ### Trocar de branch
 ```
