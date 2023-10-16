@@ -125,7 +125,7 @@ touch .gitignore
 
 Adicionar um arquivo ao .gitignore
 ```
-"{nome do arquivo}" >> .gitignore
+echo "{nome do arquivo}" >> .gitignore
 ```
 
 Adicionar uma pasta ao .gitignore
