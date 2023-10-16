@@ -13,6 +13,7 @@ Comandos do Git ensinados no curso Versionamento de Código com Git e GitHub da 
 | Definir/Alterar email | [Como usar](#definiralterar-email) |
 | Definir/Alterar nome | [Como usar](#definiralterar-nome) |
 | Novo repositório | [Como usar](#inicializa-um-novo-repositório-local) |
+| Ativar tamanhos longos de diretórios | [Como usar](#ativar-tamanhos-longos-de-diretórios) |
 | Adicionar arquivos modificados | [Como usar](#adicionar-arquivos-modificados-do-palco) |
 | Commit dos arquivos | [Como usar](#realiza-o-commit-dos-arquivos-mofificados) |
 | Troca de branch | [Como usar](#troca-de-branch) |
@@ -57,6 +58,12 @@ git config --global user.nome {nome}
 ```
 git init
 ```
+
+##
+### Ativar tamanhos longos de diretórios
+´´´
+git config --global core.longpaths true
+´´´
 
 ##
 ### Adicionar arquivos modificados do palco
