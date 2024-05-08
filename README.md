@@ -23,7 +23,7 @@ Comandos do Git ensinados no curso Versionamento de Código com Git e GitHub da 
 | Tags | [Como usar](#tags) |
 
 ##
-### - Configuração do Git
+### Configuração do Git
 ```bash
 git config --global user.email {email}      # Definir/Alterar email
 git config --global user.nome {nome}        # Definir/Alterar nome
@@ -31,7 +31,7 @@ git config --global core.longpaths true     # Definir/Alterar tamanho de diretó
 ```
 
 
-### - Primeiro commit
+### Primeiro commit
 ```bash
 git init                                    # Inicializa um novo repositório local
 git add . ou {nome do arquivo}              # Adiciona arquivos modificados ao palco
@@ -41,21 +41,21 @@ git remote add origin {link do repositório} # Adiciona o link do repositório r
 git push -u origin {nome da branch}         # Realiza o primeiro envio envio das modificações
 ```
 
-### - Remoção
+### Remoção
 ```bash
 git rm -r --cached {nome da pasta}  # Remove a pasta e seus arquivos
 git rm --cached {nome do arquivo}   # Remove o arquivo
 rm -r .git/                         # Remove o repositório local
 ```
 
-### - Atualizar commit
+### Atualizar commit
 ```bash
 git add . ou {nome do arquivo}      # Adiciona arquivos modificados ao palco
 git commit -m "mensagem"            # Realiza o commit dos arquivos modificados
 git push -u origin main             # Realiza o envio do commit para o repositório remoto
 ```
 
-### - Ignorar pastas ou arquivos
+### Ignorar pastas ou arquivos
 ```bash
 touch .gitignore                            # Cria o arquivo .gitignore
 echo "{nome do arquivo}" >> .gitignore      # Adiciona o arquivo ao .gitignore
@@ -63,7 +63,7 @@ echo "{nome da pasta/}" >> .gitignore       # Adiciona a pasta ao .gitignore
 ```
 <small>Nota: o comando ```touch``` só funciona no terminal Bash, o terminal normal não reconhece esse comando.</small>
 
-### - Comandos importantes do git
+### Comandos importantes do git
 ```bash
 git restore nomeDoArquivo                                                   # Restaura o arquivo do commit
 ###
@@ -84,12 +84,12 @@ git commit -s                                                               # Re
 
 ```
 
-### - Puxando alterações
+### Puxando alterações
 ```bash
 git pull
 ```
 
-### - Branches
+### Branches
 ```bash
 git branch -v                                       # Lista todos os commits de cada branch
 git branch                                          # Lista todas as branches
@@ -102,7 +102,7 @@ git diff {nome da branch} {nome da outra branch}    # Visualiza as diferenças e
 ```
 <small>Nota: O comando ```git checkout -b``` além de criar uma nova branch, também realiza a troca automatica sem precisar de um novo comando.</small>
 
-### - Tags
+### Tags
 ```bash
 git tag                                     # Lista todas as tags
 git tag -a {nome da tag} -m "mensagem"      # Cria uma nova tag
