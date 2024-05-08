@@ -2,13 +2,22 @@
 
 Comandos do Git ensinados no curso Versionamento de Código com Git e GitHub da [Digital Innovation One](https://wwwdio.me/), e também em pesquisas e outros recursos.
 
+![](/VersionamentoDeCodigoGit-DIO/Git.png#vitrinedev)
+
+##
+### Vitrine.Dev
+| Vitrine.Dev     |           |
+|---------------------------|-----------|
+| Nome | Versionamento de Código com Git e GitHub |
+| Tecnologias | git |
+
 ##
 ### 📚 Documentação
 * <img src="https://skillicons.dev/icons?i=git" width="18px"> [Documentação Git](https://git-scm.com/doc) 
 * <img src="https://skillicons.dev/icons?i=github" width="18px"> [Documentação GitHub](https://docs.github.com/)
 
 ##
-### 💻 Comandos
+### 💻 Atalho dos Comandos
 
 | Ação | Como usar |
 |-------|---------|
