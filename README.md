@@ -4,8 +4,8 @@ Comandos do Git ensinados no curso Versionamento de Código com Git e GitHub da 
 
 ##
 ### 📚 Documentação
-- [Documentação Git](https://git-scm.com/doc)
-- [Documentação GitHub](https://docs.github.com/)
+* <img src="https://skillicons.dev/icons?i=git" width="18px"> [Documentação Git](https://git-scm.com/doc) 
+* <img src="https://skillicons.dev/icons?i=github" width="18px"> [Documentação GitHub](https://docs.github.com/)
 
 ##
 ### 💻 Comandos
