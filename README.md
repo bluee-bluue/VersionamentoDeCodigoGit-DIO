@@ -2,7 +2,7 @@
 
 Comandos do Git ensinados no curso Versionamento de Código com Git e GitHub da [Digital Innovation One](https://wwwdio.me/), e também em pesquisas e outros recursos.
 
-![](/VersionamentoDeCodigoGit-DIO/Git.png#vitrinedev)
+![](https://hermes.dio.me/articles/cover/e34ac480-ce44-439a-b28b-1845bd195afe.png#vitrinedev)
 
 ##
 ### Vitrine.Dev
